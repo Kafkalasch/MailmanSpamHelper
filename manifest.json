@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "Mailman Spam Helper",
-  "description": "Dieses Addon wählt automatisch auf Mailman Moderatoren Seiten für alle Einträge 'Discard' und 'Add ___ to one of these sender filters' aus.",
-  "version": "1.0",
+  "description": "Dieses Addon wählt auf mailman db Moderations-Seiten automatisch die 'Wegwerf'-Optionen aus",
+  "version": "0.0.0.1",
 
   "author": "Michael Hoefler",
   "icons": { 
