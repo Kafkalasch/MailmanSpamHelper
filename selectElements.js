@@ -1,14 +1,41 @@
+
 var setDiscard = function(searchText){
-	$("td").filter(function(){return $(this).text() === searchText;}).each(function(){
-		$(this).parent().next().find("INPUT:last").attr("checked", true);
-	});
+    const filteredTds = getTdsMatchingText(searchText);
+    filteredTds.each(
+        function(idx, element){
+		    $(element).parent().next().find("INPUT:last").attr("checked", true);
+        }
+    );
 };
+
+const getTdsMatchingText = function(searchText){
+    const filteredTds = $("td")
+        .filter(
+            (idx, element) => $(element).text() === searchText
+        );
+    return filteredTds;
+}
 
 var addToSenderFilters = function(endText){
-	$("td").filter(function(){return $(this).text().endsWith(endText);}).each(function(){
-		$(this).find("INPUT").attr("checked", true);
-	});
+    const filteredTds = getTdsEndingWithText(endText);
+    filteredTds.each(
+        (idx, element) => $(element).find("INPUT").attr("checked", true)
+    );
 };
 
+const getTdsEndingWithText = function(endText){
+    const filteredTds = $("td")
+        .filter(
+            (idx, element) => {
+                return $(element).text().endsWith(endText)
+            }
+        );
+    return filteredTds;
+}
+
 setDiscard("Action to take on all these held messages:");
+setDiscard("Was soll mit diesen Nachrichten geschehen?");
+
 addToSenderFilters("to one of these sender filters:");
+addToSenderFilters("dem Sender-Filter hinzufügen?");
+
