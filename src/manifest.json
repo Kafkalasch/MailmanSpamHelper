@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "Mailman Spam Helper",
-  "description": "Dieses Addon wählt auf mailman db Moderations-Seiten automatisch die 'Wegwerf'-Optionen aus",
-  "version": "1.0.0",
+  "description": "An extension for Google Chrome that saves a few clicks when moderating the daily dose of spam mails.",
+  "version": "1.0.1",
 
   "author": "Michael Hoefler",
   "icons": { 
