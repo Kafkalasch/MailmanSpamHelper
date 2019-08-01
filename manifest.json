@@ -3,7 +3,7 @@
 
   "name": "Mailman Spam Helper",
   "description": "Dieses Addon wählt auf mailman db Moderations-Seiten automatisch die 'Wegwerf'-Optionen aus",
-  "version": "0.0.0.1",
+  "version": "1.0.0",
 
   "author": "Michael Hoefler",
   "icons": { 
